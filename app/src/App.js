@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Menu from "./Menu";
 const api = "https://www.jsonkeeper.com/b/MDXW";
 
 export default function App() {
@@ -14,8 +15,9 @@ export default function App() {
   }
   getData();
  
-
   }, []) //"[]" only lets the page render once
-  console.log(menuItems);
-  return <h1>header hoe</h1>;
+  
+  return (
+    <Menu menuItems = {menuItems}/>
+  );
 }
