@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+#Hero {
+  background-image: url("./assets/restaurantimg.jpg");
+  height: 55vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
