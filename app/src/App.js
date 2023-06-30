@@ -8,12 +8,14 @@ export default function App() {
   const [menuItems, setMenuItems] = useState([]); //Getter and Setter
   useEffect(()=>{
   async function getData() {
-    const response = axios.get(api); //calls API data
-    setMenuItems(response);
-    console.log(menuItems);
+    const response = await axios.get(api); //calls API data
+    setMenuItems(response.data);
+  
   }
   getData();
+ 
 
   }, []) //"[]" only lets the page render once
+  console.log(menuItems);
   return <h1>header hoe</h1>;
 }
