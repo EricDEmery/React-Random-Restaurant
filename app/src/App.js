@@ -7,6 +7,7 @@ import Info from "./Info";
 import Location from "./Location";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
+import Special from "./Special";
 const api = "https://www.jsonkeeper.com/b/MDXW";
 
 export default function App() {
@@ -28,6 +29,7 @@ if (page === "Home") {
     <>
     <Navbar setPage = {setPage}/>
     <Hero />
+    <Special />
     <Info />
     <Location />
     </>
