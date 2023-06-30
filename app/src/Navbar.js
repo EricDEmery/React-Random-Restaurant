@@ -16,6 +16,9 @@ export default function Navbar(props) {
           <li className="nav-item">
             <button className="nav-link active" onClick={() => props.setPage("Menu")} aria-current="page">Menu</button>
           </li>
+          <li className="nav-item">
+            <button className="nav-link active" onClick={() => props.setPage("About Us")} aria-current="page">About Us</button>
+          </li>
         </ul>
       </div>
     </div>
