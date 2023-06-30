@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Menu from "./Menu";
 const api = "https://www.jsonkeeper.com/b/MDXW";
 
-export default function App() {
+export default function App({menuItems}) {
   const [menuItems, setMenuItems] = useState([]); //Getter and Setter
   useEffect(()=>{
   async function getData() {
@@ -16,7 +16,7 @@ export default function App() {
   getData();
  
   }, []) //"[]" only lets the page render once
-  
+
   return (
     <Menu menuItems = {menuItems}/>
   );
