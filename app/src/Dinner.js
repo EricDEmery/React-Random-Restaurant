@@ -1,7 +1,7 @@
 export default function Dinner(props) {
   //console.log(props.menuItems)
   const dinnerList = props.menuItems
-    .filter((el) => el.category === "Dinner")
+    .filter((el) => el.category.title === "Dinner")
     .map((item) => (
        
         <div className="col-s-1 col-md-6 col-l-4 col-xl-4 mb-3">

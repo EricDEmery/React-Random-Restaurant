@@ -13,7 +13,7 @@ const api = "https://8000-ericdemery-backendbistr-oumw6dlyxlg.ws-us102.gitpod.io
 export default function App() {
   const [menuItems, setMenuItems] = useState([]); //Getter and Setter
   const [page, setPage] = useState("Home");
-
+console.log(menuItems)
   useEffect(() => {
     async function getData() {
       const response = await axios.get(api); //calls API data
