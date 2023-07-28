@@ -8,7 +8,7 @@ import Location from "./Location";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Special from "./Special";
-const api = "https://www.jsonkeeper.com/b/MDXW";
+const api = "https://8000-ericdemery-backendbistr-oumw6dlyxlg.ws-us102.gitpod.io/menu/fullmenu";
 
 export default function App() {
   const [menuItems, setMenuItems] = useState([]); //Getter and Setter
